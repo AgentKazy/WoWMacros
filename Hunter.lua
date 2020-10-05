@@ -22,7 +22,7 @@
 
 > Aoe (Multi-Shot, Carve)
 #showtooltip
-/startattack
+/targetenemy [noexists][help][dead]
 /cast [nospec:3,@mouseover,harm,nodead][nospec:3]Multi-Shot; [spec:3]Carve
 /petattack [pet]
 /cast [pet]Dash
