@@ -12,6 +12,9 @@
 #showtooltip
 /targetenemy [noexists][help][dead]
 /cast [spec:1,@mouseover,harm,nodead][spec:1]Cobra Shot; [spec:2,@mouseover,harm,nodead][spec:2]Steady Shot; [spec:3,@mouseover,harm,nodead][spec:3]Serpent Sting
+/cast [pet]Claw
+/cast [pet]Bite
+/cast [pet]Smack
 
 > Damage 3 (Barbed Shot, Rapid Fire, Wildfire Bomb)
 #showtooltip
