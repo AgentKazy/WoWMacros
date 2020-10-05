@@ -33,6 +33,7 @@
 /cast [pet]Dash
 /cast [pet]Claw
 /cast [pet]Bite
+/cast [pet]Smack
 
 > Command Pet
 #showtooltip Command Pet
