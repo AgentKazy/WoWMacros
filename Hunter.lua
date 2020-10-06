@@ -11,15 +11,12 @@
 > Damage 2 (Cobra Shot, Steady Shot, Serpent Sting)
 #showtooltip
 /targetenemy [noexists][help][dead]
-/cast [spec:1,@mouseover,harm,nodead][spec:1]Cobra Shot; [spec:2,@mouseover,harm,nodead][spec:2]Steady Shot; [spec:3,@mouseover,harm,nodead][spec:3]Serpent Sting
-/cast [pet]Claw
-/cast [pet]Bite
-/cast [pet]Smack
+/cast [spec:1,@mouseover,harm][spec:1]Cobra Shot; [spec:2,@mouseover,harm][spec:2]Steady Shot; [spec:3,@mouseover,harm][spec:3]Serpent Sting
 
 > Damage 3 (Barbed Shot, Rapid Fire, Wildfire Bomb)
 #showtooltip
 /targetenemy [noexists][help][dead] 
-/cast [spec:1]Barbed Shot; [spec:2]Rapid Fire; [spec:3,@mouseover,harm,nodead][spec:3]Wildfire Bomb;
+/cast [spec:1]Barbed Shot; [spec:2]Rapid Fire; [spec:3,@mouseover,harm][spec:3]Wildfire Bomb;
 /petattack [pet]
 /cast [pet]Claw
 /cast [pet]Bite
@@ -28,7 +25,7 @@
 > Aoe (Multi-Shot, Carve)
 #showtooltip
 /targetenemy [noexists][help][dead]
-/cast [nospec:3,@mouseover,harm,nodead][nospec:3]Multi-Shot; [spec:3]Carve
+/cast [nospec:3,@mouseover,harm][nospec:3]Multi-Shot; [spec:3]Carve
 /petattack [pet]
 /cast [pet]Dash
 /cast [pet]Claw
@@ -74,7 +71,7 @@
 
 > Harpoon
 #showtooltip
-/use [@mouseover,harm,nodead][]Harpoon
+/use [@mouseover,harm][]Harpoon
 
 > Hide
 #showtooltip
@@ -86,7 +83,7 @@
 #showtooltip
 /stopcasting
 /stopcasting
-/cast [nospec:3,@focus,exists,harm,nodead][nospec:3,@mouseover,harm,nodead][nospec:3]Counter Shot; [spec:3,@focus,exists,harm,nodead][spec:3,@mouseover,harm,nodead][spec:3]Muzzle
+/cast [nospec:3,@focus,harm][nospec:3,@mouseover,harm][nospec:3]Counter Shot; [spec:3,@focus,harm][spec:3,@mouseover,harm][spec:3]Muzzle
 
 > Mend Pet
 #showtooltip
@@ -94,13 +91,13 @@
 
 > Misdirection
 #showtooltip
-/cast [@focus,exists,noharm,nodead][@mouseover,exists,noharm,nodead][@pet]Misdirection
+/cast [@focus,help][@mouseover,help][@pet]Misdirection
 
 > Slow
 #showtooltip
 /stopcasting
 /stopcasting
-/cast [spec:3,@mouseover,harm,nodead][spec:3]Wing Clip; [@mouseover,harm,nodead][]Concussive Shot
+/cast [spec:3,@mouseover,harm][spec:3]Wing Clip; [@mouseover,harm][]Concussive Shot
 
 > Tar Trap
 #showtooltip
@@ -145,16 +142,16 @@
 /petpassive
 /petattack
 /cast Dash
-/cast [@mouseover,harm,nodead][]Intimidation
+/cast [@mouseover,harm][]Intimidation
 /petassist
 
 > Spirit Mend
 #showtooltip
-/cast [@mouseover,help,nodead][@player]Spirit Mend
+/cast [@mouseover,help][@player]Spirit Mend
 
 > Spirit Mend Pet
 #showtooltip
-/cast [@mouseover,help,nodead][@pet]Spirit Mend
+/cast [@mouseover,help][@pet]Spirit Mend
 
 > Tame Beast
 #showtooltip Tame Beast
