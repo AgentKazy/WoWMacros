@@ -11,30 +11,31 @@
 > Damage 2 (Cobra Shot, Steady Shot, Serpent Sting)
 #showtooltip
 /targetenemy [noexists][help][dead]
-/cast [spec:1,@mouseover,harm][spec:1]Cobra Shot; [spec:2,@mouseover,harm][spec:2]Steady Shot; [spec:3,@mouseover,harm][spec:3]Serpent Sting
+/cast [spec:1,@mouseover,harm,nodead][spec:1]Cobra Shot; [spec:2,@mouseover,harm,nodead][spec:2]Steady Shot; [spec:3,@mouseover,harm,nodead][spec:3]Serpent Sting
 
 > Damage 3 (Barbed Shot, Rapid Fire, Wildfire Bomb)
 #showtooltip
-/targetenemy [noexists][help][dead] 
-/cast [spec:1]Barbed Shot; [spec:2]Rapid Fire; [spec:3,@mouseover,harm][spec:3]Wildfire Bomb;
+/targetenemy [noexists][help][dead]
+/cast [spec:1]Barbed Shot; [spec:2]Rapid Fire; [spec:3,@mouseover,harm,nodead][spec:3]Wildfire Bomb;
 /petattack [pet]
 /cast [pet]Claw
 /cast [pet]Bite
 /cast [pet]Smack
 
-> Aoe (Multi-Shot, Carve)
+> Damage Aoe (Multi-Shot, Carve)
 #showtooltip
 /targetenemy [noexists][help][dead]
-/cast [nospec:3,@mouseover,harm][nospec:3]Multi-Shot; [spec:3]Carve
+/cast [nospec:3,@mouseover,harm,nodead][nospec:3]Multi-Shot; [spec:3]Carve
 /petattack [pet]
 /cast [pet]Dash
 /cast [pet]Claw
 /cast [pet]Bite
 /cast [pet]Smack
 
-> Command Pet
-#showtooltip Command Pet
-/cast [pet]Command Pet
+> Hunter's Mark
+#showtooltip
+/targetenemy [noexists][help][dead]
+/cast [@mouseover,harm,nodead][]Hunter's Mark
 
 > Cooldown 1
 #showtooltip
@@ -52,8 +53,13 @@
 /use [combat]13
 /use [combat]14
 
+> Command Pet
+#showtooltip Command Pet
+/cast [pet]Command Pet
+
 > Disengage
 #showtooltip
+/stopcasting
 /stopcasting
 /cast Disengage
 
@@ -71,7 +77,7 @@
 
 > Harpoon
 #showtooltip
-/use [@mouseover,harm][]Harpoon
+/use [@mouseover,harm,nodead][]Harpoon
 
 > Hide
 #showtooltip
@@ -83,21 +89,21 @@
 #showtooltip
 /stopcasting
 /stopcasting
-/cast [nospec:3,@focus,harm][nospec:3,@mouseover,harm][nospec:3]Counter Shot; [spec:3,@focus,harm][spec:3,@mouseover,harm][spec:3]Muzzle
+/cast [nospec:3,@focus,harm,nodead][nospec:3,@mouseover,harm,nodead][nospec:3]Counter Shot; [spec:3,@focus,harm,nodead][spec:3,@mouseover,harm,nodead][spec:3]Muzzle
 
 > Mend Pet
 #showtooltip
-/cast [pet]Revive Pet; [spec:1]Call Pet 1; [spec:3]Call Pet 2
+/cast [pet]Revive Pet; [spec:1,nopet]Call Pet 1; [spec:3,nopet]Call Pet 2
 
 > Misdirection
 #showtooltip
-/cast [@focus,help][@mouseover,help][@pet]Misdirection
+/cast [@focus,help,nodead][@mouseover,help,nodead][@pet]Misdirection
 
 > Slow
 #showtooltip
 /stopcasting
 /stopcasting
-/cast [spec:3,@mouseover,harm][spec:3]Wing Clip; [@mouseover,harm][]Concussive Shot
+/cast [spec:3,@mouseover,harm,nodead][spec:3]Wing Clip; [@mouseover,harm,nodead][]Concussive Shot
 
 > Tar Trap
 #showtooltip
@@ -142,16 +148,16 @@
 /petpassive
 /petattack
 /cast Dash
-/cast [@mouseover,harm][]Intimidation
+/cast [@mouseover,harm,nodead][]Intimidation
 /petassist
 
 > Spirit Mend
 #showtooltip
-/cast [@mouseover,help][@player]Spirit Mend
+/cast [@mouseover,help,nodead][@player]Spirit Mend
 
 > Spirit Mend Pet
 #showtooltip
-/cast [@mouseover,help][@pet]Spirit Mend
+/cast [@mouseover,help,nodead][@pet]Spirit Mend
 
 > Tame Beast
 #showtooltip Tame Beast
