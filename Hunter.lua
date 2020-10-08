@@ -32,7 +32,7 @@
 /cast [pet]Bite
 /cast [pet]Smack
 
-> Hunter\'s Mark
+> Hunter's Mark
 #showtooltip
 /targetenemy [noexists][help][dead]
 /cast [@mouseover,harm,nodead][]Hunter's Mark
