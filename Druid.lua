@@ -22,6 +22,16 @@
 /cast [spec:1, noform:4] Moonkin Form
 /cast Solar Wrath
 
+> Starsurge
+#showtooltip Starsurge
+/targetenemy [noexists][help][dead]
+/cast [spec:1, noform:4] Moonkin Form
+/cast Starsurge
+
+> Regrowth/Rebirth
+#showtooltip
+/cast [@mouseover,help,dead]Rebirth; [@mouseover,help,nodead][]Regrowth
+
 > Moonkin Form
 #showtooltip Moonkin Form
 /use [noform:4] !Moonkin Form
